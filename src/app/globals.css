@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+:root {
+  /* تم روشن با سبز ملایم */
+  --background: #f0f7f4; /* سبز بسیار ملایم و روشن */
+  --foreground: #1a332a; /* سبز تیره برای متن */
+  
+  --primary: #2d8f6f; /* سبز ملایم اصلی */
+  --primary-light: #4aad8a;
+  --primary-dark: #1a6b4f;
+  
+  --secondary: #e8f3ef;
+  --secondary-foreground: #1a332a;
+  
+  --muted: #dce8e3;
+  --muted-foreground: #4a6b5e;
+  
+  --accent: #c5ddd2;
+  --accent-foreground: #1a332a;
+  
+  --border: #d0e0d9;
+  --input: #d0e0d9;
+  --ring: #2d8f6f;
+  
+  --card: #f5faf8;
+  --card-foreground: #1a332a;
+  
+  --destructive: #e74c3c;
+  --destructive-foreground: #ffffff;
+}
+
+/* تم تاریک با کلاس dark (هماهنگ با darkMode: 'class') */
+.dark {
+  --background: #0d1f18;
+  --foreground: #e8f3ef;
+  
+  --primary: #3aa885;
+  --primary-light: #5cc4a0;
+  --primary-dark: #2d8f6f;
+  
+  --secondary: #1a332a;
+  --secondary-foreground: #e8f3ef;
+  
+  --muted: #1f3f33;
+  --muted-foreground: #8aafa0;
+  
+  --accent: #1f3f33;
+  --accent-foreground: #e8f3ef;
+  
+  --border: #2a4a3d;
+  --input: #2a4a3d;
+  --ring: #3aa885;
+  
+  --card: #152b22;
+  --card-foreground: #e8f3ef;
+  
+  --destructive: #e74c3c;
+  --destructive-foreground: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* کلاس‌های کمکی برای Tailwind */
+@layer utilities {
+  .bg-background {
+    background-color: var(--background);
+  }
+  
+  .text-foreground {
+    color: var(--foreground);
+  }
+  
+  .bg-primary {
+    background-color: var(--primary);
+  }
+  
+  .text-primary {
+    color: var(--primary);
+  }
+  
+  .border-primary {
+    border-color: var(--primary);
+  }
+  
+  .bg-secondary {
+    background-color: var(--secondary);
+  }
+  
+  .text-secondary-foreground {
+    color: var(--secondary-foreground);
+  }
+  
+  .bg-muted {
+    background-color: var(--muted);
+  }
+  
+  .text-muted-foreground {
+    color: var(--muted-foreground);
+  }
+  
+  .border-border {
+    border-color: var(--border);
+  }
+  
+  .bg-card {
+    background-color: var(--card);
+  }
+  
+  .text-card-foreground {
+    color: var(--card-foreground);
+  }
+}
+
+/* استایل اسکرول */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* انیمیشن‌های نرم */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
