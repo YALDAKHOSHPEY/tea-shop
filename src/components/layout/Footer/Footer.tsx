@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useApp } from '@/contexts/AppContext';
-import { translations } from '@/i18n/translations';
+import { getFooter, getNav } from '@/i18n';
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { FiMail, FiPhone, FiMapPin, FiSend } from 'react-icons/fi';
 import { Leaf } from 'lucide-react';
@@ -11,7 +11,10 @@ import Image from 'next/image';
 
 export default function Footer() {
   const { language, dir, theme } = useApp();
-  const t = translations[language];
+  
+  // دریافت ترجمه‌ها از فایل JSON
+  const footer = getFooter(language);
+  const nav = getNav(language);
 
   // دریافت پس‌زمینه فوتر بر اساس تم
   const getFooterBackground = () => {
@@ -92,7 +95,7 @@ export default function Footer() {
               </div>
             </div>
             <p className={`${getTextColor('secondary')} leading-relaxed text-sm sm:text-base`}>
-              {t.footer.aboutText}
+              {footer.aboutText}
             </p>
             <div className="flex gap-3 mt-4">
               <motion.a 
@@ -127,13 +130,13 @@ export default function Footer() {
           >
             <h4 className={`text-lg font-semibold mb-4 ${getAccentColor()} flex items-center gap-2`}>
               <Leaf className="w-4 h-4" />
-              {t.footer.quickLinks}
+              {footer.quickLinks}
             </h4>
             <ul className="space-y-2.5">
               {[
-                { href: '/products', label: language === 'fa' ? 'محصولات' : 'Products' },
-                { href: '/about', label: language === 'fa' ? 'درباره ما' : 'About Us' },
-                { href: '/contact', label: language === 'fa' ? 'تماس با ما' : 'Contact' },
+                { href: '/products', label: nav.products },
+                { href: '/about', label: nav.about },
+                { href: '/contact', label: nav.contact },
                 { href: '/blog', label: language === 'fa' ? 'وبلاگ' : 'Blog' },
               ].map((item) => (
                 <li key={item.href}>
@@ -157,7 +160,7 @@ export default function Footer() {
           >
             <h4 className={`text-lg font-semibold mb-4 ${getAccentColor()} flex items-center gap-2`}>
               <FiMail className="w-4 h-4" />
-              {t.footer.contact}
+              {footer.contact}
             </h4>
             <ul className="space-y-3.5">
               <li className={`flex items-center gap-3 ${getTextColor('secondary')} group`}>
@@ -228,7 +231,7 @@ export default function Footer() {
           } ${getTextColor('muted')}`}
         >
           <p>
-            © 2024 Tea House. {t.footer.copyright}
+            © 2024 Tea House. {footer.copyright}
           </p>
           <div className="flex gap-6">
             <Link href="/privacy" className={`hover:${getAccentColor()} transition`}>

@@ -6,14 +6,16 @@ import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ShoppingBag, Globe, Sun, Moon, Leaf } from 'lucide-react';
 import { useApp } from '@/contexts/AppContext';
-import { translations } from '@/i18n/translations';
+import { getNav } from '@/i18n';
 import Image from 'next/image';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { language, setLanguage, theme, toggleTheme, dir } = useApp();
-  const t = translations[language];
+  
+  // دریافت ترجمه‌های منو
+  const nav = getNav(language);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -29,20 +31,18 @@ export default function Header() {
   }, [pathname]);
 
   const navItems = [
-    { name: t.nav.home, href: '/' },
-    { name: t.nav.products, href: '/products' },
-    { name: t.nav.about, href: '/about' },
-    { name: t.nav.contact, href: '/contact' },
+    { name: nav.home, href: '/' },
+    { name: nav.products, href: '/products' },
+    { name: nav.about, href: '/about' },
+    { name: nav.contact, href: '/contact' },
   ];
 
   const isActive = (path: string) => {
-    if (path === '/') {
-      return pathname === path;
-    }
+    if (path === '/') return pathname === path;
     return pathname.startsWith(path);
   };
 
-  // دریافت پس‌زمینه هدر بر اساس تم و اسکرول
+  // استایل‌های هدر
   const getHeaderBackground = () => {
     if (scrolled) {
       return theme === 'dark'
@@ -54,7 +54,6 @@ export default function Header() {
       : 'bg-gradient-to-br from-[#e8f3ef] via-[#f0f7f4] to-[#e8f3ef] border-b border-[#d0e0d9]/30';
   };
 
-  // دریافت رنگ متن بر اساس تم
   const getTextColor = (active: boolean = false) => {
     if (theme === 'dark') {
       return active ? 'text-[#3aa885]' : 'text-[#c5ddd2] hover:text-[#3aa885]';
@@ -62,7 +61,6 @@ export default function Header() {
     return active ? 'text-[#2d8f6f]' : 'text-[#1a332a] hover:text-[#2d8f6f]';
   };
 
-  // دریافت رنگ آکاردئون بر اساس تم
   const getAccentColor = () => {
     return theme === 'dark' ? 'bg-[#3aa885]' : 'bg-[#2d8f6f]';
   };
@@ -81,7 +79,6 @@ export default function Header() {
               transition={{ type: 'spring', stiffness: 300 }}
               className="relative"
             >
-              {/* پس‌زمینه گرد برای لوگو */}
               <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
                 theme === 'dark' 
                   ? 'bg-white/90 shadow-lg shadow-[#3aa885]/20' 

@@ -4,14 +4,16 @@ import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useApp } from '@/contexts/AppContext';
-import { translations } from '@/i18n/translations';
+import { getHero } from '@/i18n';
 
 export default function Hero() {
   const [isHovered, setIsHovered] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const { theme, language, dir } = useApp();
   const [mounted, setMounted] = useState(false);
-  const t = translations[language];
+  
+  // دریافت ترجمه از فایل JSON
+  const content = getHero(language);
 
   useEffect(() => {
     setMounted(true);
@@ -56,33 +58,6 @@ export default function Hero() {
       }
     }
   };
-
-  const heroContent = {
-    fa: {
-      title: 'هنر چای اصیل را',
-      titleHighlight: 'کشف کنید',
-      description: 'از ارتفاعات مه‌آلود آسیا تا فنجان شما، چای‌های سبز و قرمز ما سفری اصیل به دنیای طعم‌ها را ارائه می‌دهند. هر برگ با دقت توسط بهترین کشاورزان چای انتخاب و فرآوری می‌شود تا آنتی‌اکسیدان‌های طبیعی و خواص بین‌نظیر خود را حفظ کند. چای سبز با خواص ضدالتهابی خود به سلامت قلب کمک کرده و متابولیسم بدن را بهبود می‌بخشد، در حالی که چای قرمز با طعم گرم و دلپذیر خود، آرامش عمیقی را به ارمغان می‌آورد. هر فنجان از این چای‌های نفیس، لحظه‌ای از آرامش و انرژی را برای شما به ارمغان خواهد آورد.',
-      cta1: 'مشاهده محصولات',
-      cta2: 'درباره ما',
-      feature1: '۱۰۰٪ ارگانیک',
-      feature1Desc: 'طبیعی و خالص',
-      feature2: 'مرغوب‌ترین برگ‌ها',
-      feature2Desc: 'از کوهستان‌های بلند',
-    },
-    en: {
-      title: 'Discover the Art',
-      titleHighlight: 'of Fine Tea',
-      description: 'From the misty highlands of Asia to your cup, our premium green and red teas offer an authentic journey of flavor. Each leaf is carefully handpicked by master tea farmers and crafted to preserve the natural antioxidants and unique properties. Green tea, rich in anti-inflammatory compounds, supports heart health and boosts metabolism, while red tea delivers a warm, soothing flavor that brings deep relaxation. Every cup of these exquisite teas brings you a moment of tranquility and natural energy.',
-      cta1: 'Explore Collection',
-      cta2: 'Our Story',
-      feature1: '100% Organic',
-      feature1Desc: 'Pure & Natural',
-      feature2: 'Premium Sourcing',
-      feature2Desc: 'From High Mountains',
-    }
-  };
-
-  const content = heroContent[language];
 
   return (
     <section 
@@ -211,7 +186,7 @@ export default function Hero() {
                   ? 'bg-gradient-to-r from-emerald-500 to-green-500 text-white hover:shadow-lg hover:shadow-emerald-500/25'
                   : 'bg-gradient-to-r from-emerald-700 to-green-700 text-white hover:shadow-lg hover:shadow-emerald-700/30'
               }`}>
-                {content.cta1}
+                {content.cta}
                 <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={language === 'fa' ? "M13 5l-7 7 7 7" : "M9 5l7 7-7 7"} />
                 </svg>
