@@ -26,3 +26,22 @@ A modern e-commerce web application for buying and selling premium teas, built w
 ```bash
 git clone https://github.com/your-username/tea-shop.git
 cd tea-shop
+tea-shop/
+├── app/                    # Next.js App Router
+│   ├── (routes)/          # Route groups
+│   │   ├── cart/          # Cart page
+│   │   ├── products/      # Product pages
+│   │   └── checkout/      # Checkout flow
+│   ├── components/        # Reusable components
+│   │   ├── Cart/          # Cart components
+│   │   ├── Product/       # Product components
+│   │   └── Layout/        # Layout components
+│   ├── store/             # Redux configuration
+│   │   ├── slices/        # Redux slices
+│   │   └── hooks.ts       # Typed hooks
+│   └── utils/             # Utility functions
+├── public/                # Static assets
+│   └── images/            # Product images
+├── types/                 # TypeScript definitions
+├── .env.local             # Environment variables
+└── package.json           # Dependencies and scripts
