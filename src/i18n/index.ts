@@ -10,12 +10,19 @@ export const translations = {
 
 export type Language = keyof typeof translations;
 
+// ========== هوک استفاده از ترجمه ==========
+export function useTranslation(lang: Language) {
+  return translations[lang];
+}
+
 // ========== توابع کمکی برای هر بخش ==========
 export const getNav = (lang: Language) => translations[lang].nav;
 export const getHero = (lang: Language) => translations[lang].hero;
 export const getFooter = (lang: Language) => translations[lang].footer;
 export const getAbout = (lang: Language) => translations[lang].about;
 export const getContact = (lang: Language) => translations[lang].contact;
+export const getProducts = (lang: Language) => translations[lang].products;
+export const getCart = (lang: Language) => translations[lang].cart;
 
 // ========== تابع عمومی برای دریافت هر ترجمه ==========
 export function getTranslation(lang: Language, path: string): string {

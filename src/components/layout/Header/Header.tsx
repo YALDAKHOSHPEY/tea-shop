@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ShoppingBag, Globe, Sun, Moon, Leaf } from 'lucide-react';
 import { useApp } from '@/contexts/AppContext';
+import { useCart } from '@/contexts/CartContext'; // ← اضافه شد
 import { getNav } from '@/i18n';
 import Image from 'next/image';
 
@@ -13,6 +14,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { language, setLanguage, theme, toggleTheme, dir } = useApp();
+  const { totalItems, totalPrice } = useCart(); // ← اضافه شد
   
   // دریافت ترجمه‌های منو
   const nav = getNav(language);
@@ -64,6 +66,9 @@ export default function Header() {
   const getAccentColor = () => {
     return theme === 'dark' ? 'bg-[#3aa885]' : 'bg-[#2d8f6f]';
   };
+
+  // فرمت قیمت با دو رقم اعشار
+  const formattedPrice = totalPrice.toFixed(2);
 
   return (
     <header
@@ -169,23 +174,38 @@ export default function Header() {
               )}
             </motion.button>
 
-            {/* سبد خرید */}
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className={`p-2 rounded-full transition relative group ${
-                theme === 'dark' ? 'hover:bg-[#3aa885]/20' : 'hover:bg-[#2d8f6f]/20'
-              }`}
-            >
-              <ShoppingBag className={`w-4 h-4 sm:w-5 sm:h-5 transition ${
-                theme === 'dark' 
-                  ? 'text-[#c5ddd2] group-hover:text-[#3aa885]' 
-                  : 'text-[#1a332a] group-hover:text-[#2d8f6f]'
-              }`} />
-              <span className="absolute -top-0.5 -right-0.5 bg-[#2d8f6f] text-white text-[10px] font-bold rounded-full w-4 h-4 sm:w-5 sm:h-5 flex items-center justify-center shadow-lg">
-                0
-              </span>
-            </motion.button>
+            {/* سبد خرید - با لینک به صفحه سبد خرید */}
+            <Link href="/cart">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className={`p-2 rounded-full transition relative group ${
+                  theme === 'dark' ? 'hover:bg-[#3aa885]/20' : 'hover:bg-[#2d8f6f]/20'
+                }`}
+              >
+                <ShoppingBag className={`w-4 h-4 sm:w-5 sm:h-5 transition ${
+                  theme === 'dark' 
+                    ? 'text-[#c5ddd2] group-hover:text-[#3aa885]' 
+                    : 'text-[#1a332a] group-hover:text-[#2d8f6f]'
+                }`} />
+                
+                {/* نشانگر تعداد */}
+                {totalItems > 0 && (
+                  <span className="absolute -top-0.5 -right-0.5 bg-[#2d8f6f] text-white text-[10px] font-bold rounded-full min-w-[18px] h-[18px] flex items-center justify-center shadow-lg px-1">
+                    {totalItems}
+                  </span>
+                )}
+                
+                {/* نمایش قیمت در هاور */}
+                <div className={`absolute -bottom-8 left-1/2 -translate-x-1/2 text-[10px] px-2 py-0.5 rounded opacity-0 group-hover:opacity-100 transition whitespace-nowrap ${
+                  theme === 'dark' 
+                    ? 'bg-[#1a332a] text-[#c5ddd2]' 
+                    : 'bg-white text-[#1a332a] shadow-md'
+                }`}>
+                  ${formattedPrice}
+                </div>
+              </motion.div>
+            </Link>
 
             {/* دکمه منوی موبایل */}
             <motion.button

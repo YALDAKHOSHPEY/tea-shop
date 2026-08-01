@@ -1,142 +1,217 @@
 {
-    "nav": {
-      "home": "Home",
-      "products": "Products",
-      "about": "About",
-      "contact": "Contact",
-      "cart": "Cart"
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "cart": "Cart"
+  },
+  "hero": {
+    "title": "Discover the Art",
+    "titleHighlight": "of Fine Tea",
+    "description": "From the misty highlands of Asia to your cup, our premium green and red teas offer an authentic journey of flavor. Each leaf is carefully handpicked by master tea farmers and crafted to preserve the natural antioxidants and unique properties. Green tea, rich in anti-inflammatory compounds, supports heart health and boosts metabolism, while red tea delivers a warm, soothing flavor that brings deep relaxation. Every cup of these exquisite teas brings you a moment of tranquility and natural energy.",
+    "cta": "Explore Collection",
+    "cta2": "Our Story",
+    "feature1": "100% Organic",
+    "feature1Desc": "Pure & Natural",
+    "feature2": "Premium Sourcing",
+    "feature2Desc": "From High Mountains"
+  },
+  "footer": {
+    "about": "About Us",
+    "aboutText": "We love tea and have gathered the world's best teas for you.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact Us",
+    "copyright": "All rights reserved"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "A Journey to the Authentic World of Green & Red Teas",
+    "story": {
+      "title": "The Story of Tea House",
+      "text1": "Tea House was born in the heart of the lush green mountains of northern Iran, where the aroma of fresh tea blends with the morning breeze. With a love for tea culture and a passion for delivering the finest, we began a journey where every cup tells a story of authenticity and quality.",
+      "text2": "From the very first days, we established Tea House with a purpose beyond being just a tea shop. We seek to create an experience that takes you to the lush tea fields of Japan, the plains of India, the mountains of China, and the fragrant gardens of Taiwan with every sip. Each tea leaf is meticulously selected to deliver the most authentic flavors to your cup.",
+      "text3": "At Tea House, we view the art of tea drinking as a ritual of relaxation and mindfulness. Every cup of tea is an opportunity to pause, reflect, and savor life's precious moments. This is what has made us fall in love with the path we have chosen."
     },
-    "hero": {
-      "title": "Discover the Art",
-      "titleHighlight": "of Fine Tea",
-      "description": "From the misty highlands of Asia to your cup, our premium green and red teas offer an authentic journey of flavor. Each leaf is carefully handpicked by master tea farmers and crafted to preserve the natural antioxidants and unique properties. Green tea, rich in anti-inflammatory compounds, supports heart health and boosts metabolism, while red tea delivers a warm, soothing flavor that brings deep relaxation. Every cup of these exquisite teas brings you a moment of tranquility and natural energy.",
-      "cta": "Explore Collection",
-      "cta2": "Our Story",
-      "feature1": "100% Organic",
-      "feature1Desc": "Pure & Natural",
-      "feature2": "Premium Sourcing",
-      "feature2Desc": "From High Mountains"
+    "mission": {
+      "title": "Vision & Mission",
+      "text1": "Our vision is to create a world where every cup of tea serves as a bridge to tranquility, health, and a deeper connection with nature. At Tea House, we seek to promote tea drinking as a healthy and authentic lifestyle.",
+      "text2": "Our mission goes beyond providing quality teas. We are committed to telling a story of sustainability, environmental respect, and support for local farmers with every tea leaf. Our teas not only offer exceptional flavor but also represent our commitment to a better world.",
+      "text3": "We believe that tea can be more than just a beverage; it can inspire moments of reflection, creativity, and human connection. That is why we pursue the best for you every day with love and dedication."
     },
-    "footer": {
-      "about": "About Us",
-      "aboutText": "We love tea and have gathered the world's best teas for you.",
-      "quickLinks": "Quick Links",
-      "contact": "Contact Us",
-      "copyright": "All rights reserved"
+    "values": {
+      "title": "Our Core Values",
+      "items": [
+        {
+          "icon": "Leaf",
+          "title": "Uncompromising Quality",
+          "desc": "Carefully selected tea leaves from the world's finest gardens with the highest standards",
+          "color": "emerald"
+        },
+        {
+          "icon": "Shield",
+          "title": "Authenticity & Purity",
+          "desc": "Completely natural and organic teas, free from any additives and artificial substances",
+          "color": "blue"
+        },
+        {
+          "icon": "Users",
+          "title": "Customer Commitment",
+          "desc": "Delivering an experience beyond expectations with focus on your needs and preferences",
+          "color": "amber"
+        },
+        {
+          "icon": "Coffee",
+          "title": "Expertise & Passion",
+          "desc": "A team of tea specialists with deep knowledge and love for the art of tea drinking",
+          "color": "purple"
+        },
+        {
+          "icon": "Truck",
+          "title": "Trust & Reliability",
+          "desc": "Fast and secure delivery with professional packaging that preserves product quality",
+          "color": "rose"
+        },
+        {
+          "icon": "Heart",
+          "title": "Passion for Tea",
+          "desc": "We love tea and share this love with you through every leaf and every cup",
+          "color": "red"
+        },
+        {
+          "icon": "Award",
+          "title": "Sustainability & Responsibility",
+          "desc": "Commitment to the environment, supporting local farmers, and sustainable production",
+          "color": "teal"
+        },
+        {
+          "icon": "Globe",
+          "title": "Global Connection",
+          "desc": "Bridging cultures through the art of tea drinking and introducing the most authentic flavors",
+          "color": "indigo"
+        }
+      ]
     },
-    "about": {
-      "title": "About Us",
-      "subtitle": "A Journey to the Authentic World of Green & Red Teas",
-      "story": {
-        "title": "The Story of Tea House",
-        "text1": "Tea House was born in the heart of the lush green mountains of northern Iran, where the aroma of fresh tea blends with the morning breeze. With a love for tea culture and a passion for delivering the finest, we began a journey where every cup tells a story of authenticity and quality.",
-        "text2": "From the very first days, we established Tea House with a purpose beyond being just a tea shop. We seek to create an experience that takes you to the lush tea fields of Japan, the plains of India, the mountains of China, and the fragrant gardens of Taiwan with every sip. Each tea leaf is meticulously selected to deliver the most authentic flavors to your cup.",
-        "text3": "At Tea House, we view the art of tea drinking as a ritual of relaxation and mindfulness. Every cup of tea is an opportunity to pause, reflect, and savor life's precious moments. This is what has made us fall in love with the path we have chosen."
-      },
-      "mission": {
-        "title": "Vision & Mission",
-        "text1": "Our vision is to create a world where every cup of tea serves as a bridge to tranquility, health, and a deeper connection with nature. At Tea House, we seek to promote tea drinking as a healthy and authentic lifestyle.",
-        "text2": "Our mission goes beyond providing quality teas. We are committed to telling a story of sustainability, environmental respect, and support for local farmers with every tea leaf. Our teas not only offer exceptional flavor but also represent our commitment to a better world.",
-        "text3": "We believe that tea can be more than just a beverage; it can inspire moments of reflection, creativity, and human connection. That is why we pursue the best for you every day with love and dedication."
-      },
-      "values": {
-        "title": "Our Core Values",
-        "items": [
-          {
-            "icon": "Leaf",
-            "title": "Uncompromising Quality",
-            "desc": "Carefully selected tea leaves from the world's finest gardens with the highest standards",
-            "color": "emerald"
-          },
-          {
-            "icon": "Shield",
-            "title": "Authenticity & Purity",
-            "desc": "Completely natural and organic teas, free from any additives and artificial substances",
-            "color": "blue"
-          },
-          {
-            "icon": "Users",
-            "title": "Customer Commitment",
-            "desc": "Delivering an experience beyond expectations with focus on your needs and preferences",
-            "color": "amber"
-          },
-          {
-            "icon": "Coffee",
-            "title": "Expertise & Passion",
-            "desc": "A team of tea specialists with deep knowledge and love for the art of tea drinking",
-            "color": "purple"
-          },
-          {
-            "icon": "Truck",
-            "title": "Trust & Reliability",
-            "desc": "Fast and secure delivery with professional packaging that preserves product quality",
-            "color": "rose"
-          },
-          {
-            "icon": "Heart",
-            "title": "Passion for Tea",
-            "desc": "We love tea and share this love with you through every leaf and every cup",
-            "color": "red"
-          },
-          {
-            "icon": "Award",
-            "title": "Sustainability & Responsibility",
-            "desc": "Commitment to the environment, supporting local farmers, and sustainable production",
-            "color": "teal"
-          },
-          {
-            "icon": "Globe",
-            "title": "Global Connection",
-            "desc": "Bridging cultures through the art of tea drinking and introducing the most authentic flavors",
-            "color": "indigo"
-          }
-        ]
-      },
-      "team": {
-        "title": "Our Team; Tea Lovers",
-        "text": "At the heart of Tea House is a team of true tea enthusiasts. People who accompany you every day with passion and dedication, from tea gardens to your cup. We believe that every tea leaf has a story to tell, and we are proud to be the narrators of those stories. Our team consists of tea experts, flavor designers, and lovers whose goal is to create pure and memorable moments for you."
-      },
-      "cta": {
-        "title": "Join the Tea House Family",
-        "text": "Join us on this meaningful journey and make every day more beautiful with the aroma and flavor of authentic teas."
-      }
+    "team": {
+      "title": "Our Team; Tea Lovers",
+      "text": "At the heart of Tea House is a team of true tea enthusiasts. People who accompany you every day with passion and dedication, from tea gardens to your cup. We believe that every tea leaf has a story to tell, and we are proud to be the narrators of those stories. Our team consists of tea experts, flavor designers, and lovers whose goal is to create pure and memorable moments for you."
     },
-    "contact": {
-      "title": "Get in Touch",
-      "subtitle": "Questions, suggestions or feedback? We'd love to hear from you. Our team is ready to help.",
-      "contactTitle": "Contact Information",
-      "address": "Office Address",
-      "phone": "Support Phone",
-      "email": "Official Email",
-      "hours": "Working Hours",
-      "addressDetail": "Tehran, Valiasr St, No. 123",
-      "phoneDetail": "+98-21-12345678",
-      "emailDetail": "contact@teashop.com",
-      "hoursDetail": "Sat-Thu 9AM-6PM",
-      "socialTitle": "Follow Us",
-      "mapTitle": "Our Location",
-      "formTitle": "Send Message",
-      "required": "* Required fields",
-      "name": "Full Name",
-      "emailLabel": "Email",
-      "subjectLabel": "Subject",
-      "messageLabel": "Message",
-      "namePlaceholder": "Full name",
-      "emailPlaceholder": "example@email.com",
-      "subjectPlaceholder": "Enter your message subject",
-      "messagePlaceholder": "Write your message in detail...",
-      "submit": "Send Message",
-      "sending": "Sending...",
-      "success": "✅ Your message has been sent successfully!",
-      "error": "❌ Error sending. Please try again.",
-      "errors": {
-        "nameRequired": "Name is required",
-        "nameMin": "Minimum 3 characters",
-        "emailRequired": "Email is required",
-        "emailInvalid": "Invalid email address",
-        "subjectRequired": "Subject is required",
-        "messageRequired": "Message is required",
-        "messageMin": "Minimum 15 characters"
-      }
+    "cta": {
+      "title": "Join the Tea House Family",
+      "text": "Join us on this meaningful journey and make every day more beautiful with the aroma and flavor of authentic teas."
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Questions, suggestions or feedback? We'd love to hear from you. Our team is ready to help.",
+    "contactTitle": "Contact Information",
+    "address": "Office Address",
+    "phone": "Support Phone",
+    "email": "Official Email",
+    "hours": "Working Hours",
+    "addressDetail": "Tehran, Valiasr St, No. 123",
+    "phoneDetail": "+98-21-12345678",
+    "emailDetail": "contact@teashop.com",
+    "hoursDetail": "Sat-Thu 9AM-6PM",
+    "socialTitle": "Follow Us",
+    "mapTitle": "Our Location",
+    "formTitle": "Send Message",
+    "required": "* Required fields",
+    "name": "Full Name",
+    "emailLabel": "Email",
+    "subjectLabel": "Subject",
+    "messageLabel": "Message",
+    "namePlaceholder": "Full name",
+    "emailPlaceholder": "example@email.com",
+    "subjectPlaceholder": "Enter your message subject",
+    "messagePlaceholder": "Write your message in detail...",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "✅ Your message has been sent successfully!",
+    "error": "❌ Error sending. Please try again.",
+    "errors": {
+      "nameRequired": "Name is required",
+      "nameMin": "Minimum 3 characters",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email address",
+      "subjectRequired": "Subject is required",
+      "messageRequired": "Message is required",
+      "messageMin": "Minimum 15 characters"
+    }
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Cart is empty",
+    "emptyDesc": "You haven't added any products yet",
+    "browse": "Browse Products",
+    "summary": "Order Summary",
+    "totalItems": "Total Items",
+    "total": "Total",
+    "clear": "Clear Cart",
+    "checkout": "Place Order & Checkout"
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "A collection of the finest green and red teas from around the world",
+    "search": "Search products...",
+    "found": "products found",
+    "notFound": "No products found",
+    "changeSearch": "Please adjust your search",
+    "addToCart": "Add to Cart",
+    "add": "Add",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock",
+    "back": "Back to Products",
+    "origin": "Origin",
+    "weight": "Weight",
+    "benefits": "Benefits",
+    "brewingTemp": "Brewing Temp",
+    "brewingTime": "Brewing Time",
+    "reviews": "reviews",
+    "categories": {
+      "all": "All",
+      "green": "Green Tea",
+      "red": "Red Tea",
+      "oolong": "Oolong",
+      "herbal": "Herbal"
+    }
+  },
+  "productData": {
+    "1": {
+      "name": "Jade Green Tea",
+      "description": "Premium green tea with a delicate, refreshing taste. Rich in antioxidants that support heart health and boost metabolism.",
+      "origin": "Japan",
+      "benefits": ["Heart Health", "Boosts Metabolism", "Rich in Antioxidants"]
+    },
+    "2": {
+      "name": "Royal Red Tea",
+      "description": "Rich and full-bodied red tea with a warm, soothing flavor. Perfect for relaxation and stress relief.",
+      "origin": "China",
+      "benefits": ["Stress Relief", "Improves Digestion", "Warm and Soothing"]
+    },
+    "3": {
+      "name": "Oolong Orchid",
+      "description": "Semi-fermented tea with a unique floral aroma and smooth, creamy texture.",
+      "origin": "Taiwan",
+      "benefits": ["Weight Management", "Boosts Energy", "Improves Focus"]
+    },
+    "4": {
+      "name": "Herbal Paradise",
+      "description": "A soothing blend of chamomile, lavender, and mint. Caffeine-free and perfect for evening relaxation.",
+      "origin": "Egypt",
+      "benefits": ["Better Sleep", "Reduces Anxiety", "Caffeine-Free"]
+    },
+    "5": {
+      "name": "Matcha Premium",
+      "description": "Stone-ground green tea powder from Japan. Rich in L-theanine for focused calm.",
+      "origin": "Japan",
+      "benefits": ["Energy Boost", "Focused Calm", "High in Antioxidants"]
+    },
+    "6": {
+      "name": "Darjeeling First Flush",
+      "description": "Premium black tea from the Himalayas. Delicate muscatel flavor with a golden, bright liquor.",
+      "origin": "India",
+      "benefits": ["Antioxidant Rich", "Improves Mental Alertness", "Delicate Flavor"]
     }
   }
+}

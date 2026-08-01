@@ -3,6 +3,7 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { AppProvider, useApp } from '@/contexts/AppContext';
+import { CartProvider } from '@/contexts/CartContext';
 import Header from '@/components/layout/Header/Header';
 import Footer from '@/components/layout/Footer/Footer';
 import { useEffect, useState } from 'react';
@@ -53,7 +54,9 @@ export default function RootLayout({
 }) {
   return (
     <AppProvider>
-      <RootLayoutContent>{children}</RootLayoutContent>
+      <CartProvider>  {/* ← این خط رو اضافه کن اگر سبد خرید می‌خوای */}
+        <RootLayoutContent>{children}</RootLayoutContent>
+      </CartProvider>
     </AppProvider>
   );
 }
