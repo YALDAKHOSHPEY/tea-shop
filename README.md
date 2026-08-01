@@ -1,4 +1,4 @@
-# TeaShop 🍵
+# TeaSho 🍵
 
 A modern e-commerce web application for buying and selling premium teas, built with **Next.js**, **TypeScript**, and **Redux** for advanced state management.
 
