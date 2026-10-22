@@ -17,6 +17,13 @@
     "feature2": "Premium Sourcing",
     "feature2Desc": "From High Mountains"
   },
+  "home": {
+    "featuredTitle": "Featured Products",
+    "featuredSubtitle": "A selection of the finest teas",
+    "ctaTitle": "Ready for a cup of calm?",
+    "ctaText": "Join the Tea House family with a special first-purchase discount",
+    "ctaButton": "Start Shopping"
+  },
   "footer": {
     "about": "About Us",
     "aboutText": "We love tea and have gathered the world's best teas for you.",
