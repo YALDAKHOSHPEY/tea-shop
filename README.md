@@ -2,24 +2,10 @@
 
 > A modern, full-stack e-commerce platform for premium tea lovers — built with Next.js App Router, TypeScript, and Tailwind CSS.
 
-![TeaShop Banner](./public/images/tea.png)
 
 ---
 
-## 📖 Table of Contents
-
-- [About the Project](#-about-the-project)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Screenshots](#-screenshots)
-- [Getting Started](#-getting-started)
-- [Project Structure](#-project-structure)
-- [Environment Variables](#-environment-variables)
-- [Available Scripts](#-available-scripts)
-- [Roadmap](#-roadmap)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Contact](#-contact)
+![Home Page](./public/images/tea.png)
 
 ---
 
@@ -65,27 +51,6 @@ Whether you're a tea enthusiast looking for your next favorite blend or a develo
 
 ---
 
-## 📸 Screenshots
-
-> Replace these placeholders with your actual screenshots.  
-> Place image files inside `public/images/` and update the paths below.
-
-### 🏠 Home Page
-![Home Page](./public/images/screenshot-home.png)
-
-### 🛍️ Products Page
-![Products Page](./public/images/screenshot-products.png)
-
-### 🧾 Product Details
-![Product Details](./public/images/screenshot-product-details.png)
-
-### 🛒 Shopping Cart
-![Shopping Cart](./public/images/screenshot-cart.png)
-
-### 🌙 Mobile View
-<img src="./public/images/screenshot-mobile.png" alt="Mobile View" width="300" />
-
----
 
 ## 🚀 Getting Started
 
@@ -100,14 +65,17 @@ Make sure you have the following installed:
 ### Installation
 
 1. **Clone the repository**
-   ```bash
+   ```
+   
    git clone https://github.com/your-username/tea-shop.git
    cd tea-shop
+
+   ```
 
 2. Project Structure
 
 
-
+```
 tea-shop/
 ├── public/
 │   └── images/                  # Static images (logo, products, screenshots)
@@ -157,7 +125,7 @@ tea-shop/
 ├── tsconfig.json                # TypeScript configuration
 ├── package.json
 └── README.md
-
+```
 
 ## 📬 Contact
 
@@ -165,7 +133,7 @@ tea-shop/
   <a href="https://github.com/YALDAKHOSHPEY">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
-  <a href="mailto:missyaldatw@example.com">
+  <a href="mailto:missyaldatw.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
 </p>
